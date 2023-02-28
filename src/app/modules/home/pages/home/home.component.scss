@@ -1,0 +1,57 @@
+a {
+    text-decoration: none;
+}
+
+
+.service-content-cart .img-content{
+    width: 5.4rem;
+    height: 5.4rem;
+    border-radius: 50%;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.service-content-cart .img-content img{
+    width: 70px;
+    height: 70px;
+}
+
+.service-content-cart .text{
+    color: #4d4b4b;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 6px;
+}
+
+// Title service Csss
+
+.title_service{
+    font-size: 26px;
+    color: #787676;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+}
+
+.title_service::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background: #3D8E45;
+    bottom: -1px;
+    left: calc(50% - 24px)
+}
+
+.title_service::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #ddd;
+    bottom: -1px;
+    left: calc(50% - 50px);
+}

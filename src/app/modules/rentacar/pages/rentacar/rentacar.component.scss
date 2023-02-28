@@ -1,0 +1,91 @@
+.service-list {
+    list-style: none;
+}
+
+.service-list li {
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.service-list li .box .image {
+    background-color: #E0E7E7;
+    border-radius: 50%;
+    width: 44px;
+    height: 38px;
+    padding: 2px;
+}
+
+.service-list li .box .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.service-list li .box .text-content {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.getQuote button {
+    border-radius: 5px;
+    padding: 4px 6px;
+}
+
+
+// Title service Csss
+
+.title_service{
+    font-size: 17px;
+    color: #222;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.title_service::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background: #3D8E45;
+    bottom: -4px;
+    left: calc(50% - 24px)
+}
+
+.title_service::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #ddd;
+    bottom: -4px;
+    left: calc(50% - 50px);
+}
+
+
+@media (max-width: 575.98px) {
+     
+    .btn-primary{
+        font-size: 10px !important;
+    }
+
+    .shifting-service {
+        max-width: auto;
+    }
+
+    .service-list li .box .image {
+        width: 44px;
+        height: 34px;
+    }
+
+    .service-list li .box .text-content {
+        font-size: 12px;
+    }
+
+    .title_service{
+        font-size: 14px !important;
+    }
+
+ }
