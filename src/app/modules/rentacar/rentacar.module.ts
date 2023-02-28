@@ -6,6 +6,8 @@ import { RentacarComponent } from './pages/rentacar/rentacar.component';
 import { BookingComponent } from './pages/shared/booking/booking.component';
 import { SharedModule } from '../shared/shared.module';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 
 
@@ -18,7 +20,8 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,
     RentacarRoutingModule,
     SharedModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule
   ]
 })
 export class RentacarModule { }
