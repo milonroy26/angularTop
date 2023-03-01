@@ -1,26 +1,194 @@
-<mat-dialog-content class="mat-typography">
+<div style="padding: 18px 0px 0px 12px;">
+  <h3 class="text-center" style="font-weight: 500;">Where do you want to go?</h3>
+</div>
 
-  <p>Components use services, which provide specific functionality not directly related to views.
-  Service providers can be injected into components as dependencies, making your code modular,
-  reusable, and efficient.</p>
+<mat-tab-group>
 
-  <p>Both components and services are simply classes, with decorators that mark their type and
-  provide metadata that tells Angular how to use them.</p>
+  <mat-tab label="Inside City">
 
-  <p>The metadata for a component class associates it with a template that defines a view. A
-  template combines ordinary HTML with Angular directives and binding markup that allow Angular
-  to modify the HTML before rendering it for display.</p>
+    <div class="container example-small-box">
+      <div class="row mt-3">
 
-  <p>The metadata for a service class provides the information Angular needs to make it available
-  to components through Dependency Injection (DI).</p>
+        <div class="col-12">
+          <div class="mb-3">
+            <label class="form-label">Select City</label>
+            <select class="form-select">
+              <option> district.name </option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Moving From</label>
+            <select class="form-select">
+              <option value="" selected disabled>Move From</option>
+              <option> area.name  </option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Moving To</label>
+            <select class="form-select">
+              <option value="" selected disabled>Move To</option>
+              <option> area.name </option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Trip type</label>
+            <select class="form-select">
+              <option value="One way"> One way </option>
+              <option value="Round way"> Round way </option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label"> Car Quality </label>
+            <select class="form-select">
+              <option value="Premium">Premium</option>
+              <option value="Standard"> Standard </option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">No. of Person</label>
+            <input placeholder="person" class="form-control" type="text">
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Travelling Date:</label>
+            <input placeholder="date" class="form-control" type="date">
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <div class="mb-3">
+            <label class="form-label">Description / Notes</label>
+            <textarea placeholder="description" class="form-control" rows="2"></textarea>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input placeholder="Name" class="form-control" type="text">
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input placeholder="Number"  class="form-control" type="text">
+          </div>
+        </div>
 
-  <p>An app's components typically define many views, arranged hierarchically. Angular provides
-  the Router service to help you define navigation paths among views. The router provides
-  sophisticated in-browser navigational capabilities.</p>
+        <div class="d-flex">
+          <button mat-raised-button color="primary">Check Prices</button>
+          <button class="ms-2" mat-raised-button color="warn">Close</button>
+        </div>
 
-</mat-dialog-content>
+      </div>
+    </div>
 
-<mat-dialog-actions align="start">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
-</mat-dialog-actions>
+  </mat-tab>
+  
+  <mat-tab label="Outside City">
+
+    <div class="container example-small-box">
+      <div class="row mt-3">
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Moving From</label>
+            <select class="form-select">
+              <option> district.name </option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Moving To</label>
+            <select class="form-select">
+              <option> district.name </option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Trip type</label>
+            <select class="form-select">
+              <option value="One way"> One way </option>
+              <option value="Round way"> Round way </option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label"> Car Quality </label>
+            <select class="form-select">
+              <option value="Premium">Premium</option>
+              <option value="Standard"> Standard </option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">No. of Person</label>
+            <input placeholder="person" class="form-control" type="text">
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Travelling Date:</label>
+            <input placeholder="date" class="form-control" type="date">
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="mb-3">
+            <label class="form-label">Description</label>
+            <textarea class="form-control" rows="2"></textarea>
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input class="form-control" type="text">
+          </div>
+        </div>
+        
+        <div class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input class="form-control" type="text">
+          </div>
+        </div>
+        
+        <div class="d-flex">
+          <button mat-raised-button color="primary">Check Prices</button>
+          <button class="ms-2" mat-raised-button color="warn">Close</button>
+        </div>
+
+      </div>
+    </div>
+    
+  </mat-tab>
+
+</mat-tab-group>
+

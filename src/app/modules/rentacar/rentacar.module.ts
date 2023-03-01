@@ -7,6 +7,8 @@ import { BookingComponent } from './pages/shared/booking/booking.component';
 import { SharedModule } from '../shared/shared.module';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 
 
@@ -21,7 +23,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     RentacarRoutingModule,
     SharedModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTabsModule
   ]
 })
 export class RentacarModule { }
