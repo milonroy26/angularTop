@@ -7,6 +7,7 @@ import { server } from 'src/app/app.config';
 @Injectable({
   providedIn: 'root'
 })
+
 export class RentacarService {
   
   private server = server;
@@ -19,6 +20,7 @@ export class RentacarService {
       retry(1),
       catchError(this.errorHandeller)
     )
+    
   }
 
   errorHandeller(error: HttpErrorResponse){

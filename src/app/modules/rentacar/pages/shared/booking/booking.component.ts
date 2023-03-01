@@ -45,6 +45,7 @@ export class BookingComponent {
   }
 
   saveWc(){
+    this.isProcessing = true;
     const payload = {
       name: this.name,
       phone: this.phone,
@@ -60,13 +61,17 @@ export class BookingComponent {
     }
 
     this.RentCar.create(payload).subscribe({
+
       next: (data) => {
         this.SanckBar.open('Bookig request submitted', 'Close');
       },
+
       error: (error)=> {
         this.SanckBar.open(error.error.error, 'Close');
+        this.isProcessing = false;
       }
-    })
+
+    });
 
   }
 

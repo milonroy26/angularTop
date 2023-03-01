@@ -9,6 +9,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTabsModule} from '@angular/material/tabs';
 import { FormsModule } from '@angular/forms';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 
 
 
@@ -26,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatDialogModule,
     MatTabsModule,
-    FormsModule
+    FormsModule,
+    MatProgressBarModule
   ]
 })
 export class RentacarModule { }
