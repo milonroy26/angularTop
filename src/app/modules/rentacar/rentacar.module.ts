@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTabsModule} from '@angular/material/tabs';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -24,7 +25,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     SharedModule,
     MatButtonModule,
     MatDialogModule,
-    MatTabsModule
+    MatTabsModule,
+    FormsModule
   ]
 })
 export class RentacarModule { }

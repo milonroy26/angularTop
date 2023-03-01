@@ -17,7 +17,9 @@ export class RentacarComponent {
   }
 
   openDialog(){
-    this.Dialog.open(BookingComponent);
+    this.Dialog.open(BookingComponent, {
+      disableClose:true,
+    });
   }
 
 }
