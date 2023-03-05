@@ -109,17 +109,35 @@ export class BookingComponent {
   }
 
   saveOC(){
+    this.isProcessing = true;
+
     const payload = {
-      ocName: this.ocName,
-      ocPhone: this.ocPhone,
-      ocMove_from: this.ocMove_from,
-      ocMove_to: this.ocMove_from, 
-      ocDescription: this.ocDescription,
-      ocTrip_type: this.ocTrip_type,
-      ocCar_type: this.ocCar_type,
-      ocPassengers: this.ocPassengers,
-      ocTrip_date: this.ocTrip_type
+      name: this.ocName,
+      phone: this.ocPhone,
+      move_from: this.ocMove_from,
+      move_to: this.ocMove_to,
+      description: this.ocDescription,
+      extra_time: '',
+      type: 'Outside City',
+      passengers: this.ocPassengers,
+      car_type: this.ocCar_type,
+      trip_type: this.ocTrip_type,
+      trip_date: this.ocTrip_date
     }
+
+    this.RentCar.create(payload)
+    .subscribe({
+      next: (data) => {
+        this.SanckBar.open('Booking request has placed!', 'close');
+        this.dialogRef.close();
+      },
+
+      error: (Error) => {
+        this.SanckBar.open(Error.error.error, 'Close');
+        this.isProcessing = false;
+      }
+    })
+
   }
 
 }

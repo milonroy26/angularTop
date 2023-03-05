@@ -9,6 +9,7 @@ import { SharedModule } from './modules/shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { RentalsModule } from './modules/rentals/rentals.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     SharedModule,
     HomeModule,
     RentacarModule,
+    RentalsModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatSnackBarModule

@@ -1,0 +1,96 @@
+.service-box .box-item {
+    box-shadow: none;
+ }
+
+/* service area */
+.service-box .s-img{
+    max-width: 65px;
+    width: 100%;
+}
+
+.service-box .title-service {
+  color: #1e2229;
+  font-size: 15px;
+}
+
+.service-box .box-item{
+  text-align: center;
+
+  background: #fff;
+  border: 2px solid #f2f2f2;
+  background: #f2f2f2;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.service-box .box-item:hover{
+  transform: translateY(-6px);
+}
+
+.click-view:hover {
+    cursor: pointer
+}
+
+/*-----------------------------------*\
+  #BACK TO TOP
+\*-----------------------------------*/
+
+.back-top-btn{
+  position: fixed;
+  bottom: 13px;
+  right: 6px;
+
+  background-color: #3C6644;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.25s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+}
+
+.back-top-btn i {
+  text-align: center;
+}
+
+.back-top-btn.active{
+  transform: translateY(10px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.proerty-faqContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+  
+@media (max-width: 575.98px) {
+
+    .form-select {
+        font-size: 12px !important;
+    }
+
+    .product-section  .form-label {
+        font-size: 12px;
+    }
+
+    .back-top-btn {
+      bottom: 75px;
+      right: 6px;
+      z-index: 5000;
+  }
+
+}
