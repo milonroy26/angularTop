@@ -76,3 +76,87 @@
         </div>
     </div>
 </div>
+
+<!-- product-section -->
+<div class="product-section py-3 unitsview">
+    <div class="container">
+        <div class="row">
+            <h2 style="color: #2c4964;" class="text-center p-0">Recent Properties</h2>
+            <p class="text-center mb-3">Filter by choice</p>
+
+            <div class="col-xl-2 col-4 mt-2">
+                <label class="form-label">District</label>
+                <select [(ngModel)]="inDistrictId" class="form-select recent-select" (change)="loadArea()" aria-label="Default select example">
+                    <option value="">Any</option>
+                    <option *ngFor="let district of districts" [value]="district._id"> {{district.name}} </option>
+                </select>
+            </div>
+
+            <div class="col-xl-2 col-4 mt-2">
+                <label class="form-label">Area</label>
+                <select class="form-select recent-select" [(ngModel)]="inAreaId" (change)="loadLocation()" aria-label="Default select example">
+                    <option value="">Any</option>
+                    <option *ngFor="let area of areas" [value]="area._id"> {{area.name}} </option>
+                </select>
+            </div>
+
+            <div class="col-xl-2 col-4 mt-2">
+                <label class="form-label">Location</label>
+                <select class="form-select recent-select" aria-label="Default select example">
+                    <option value="">Any</option>
+                    <option *ngFor="let location of locations" [value]="location._id"> {{location.name}} </option>
+                </select>
+            </div>
+
+            <div class="col-xl-2 col-4 mt-2">
+                <label class="form-label">Price Range</label>
+                <select class="form-select recent-select" aria-label="Default select example">
+                    <option value="0">Any</option>
+                    <option value="1000">Upto 1,000</option>
+                    <option value="2000">Upto 2,000</option>
+                    <option value="4000">Upto 4,000</option>
+                    <option value="6000">Upto 6,000</option>
+                    <option value="10000">Upto 10,000</option>
+                    <option value="15000">Upto 15,000</option>
+                    <option value="20000">Upto 20,000</option>
+                    <option value="30000">Over 30,000</option>
+                </select>
+            </div>
+
+            <div class="col-xl-2 col-4 mt-2">
+                <label class="form-label">Rooms</label>
+                <select class="form-select recent-select" aria-label="Default select example">
+                    <option value="0">Any</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                    <option value="6">Six</option>
+                    <option value="7">Seven</option>
+                    <option value="8">Eight</option>
+                </select>
+            </div>
+
+            <div class="col-xl-2 col-4 mt-2">
+                <label class="form-label">Tenant Type</label>
+                <select class="form-select recent-select" aria-label="Default select example">
+                    <option value="">Any</option>
+                    <option> tag.name </option>
+                </select>
+            </div>
+
+            <div class="mt-4 d-flex">
+                <button class="btn btn-primary m-auto">Go <i class="bi bi-box-arrow-in-right"></i></button>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+<!-- unit component -->
+
+<app-units></app-units>
+
+<!-- unit component End -->

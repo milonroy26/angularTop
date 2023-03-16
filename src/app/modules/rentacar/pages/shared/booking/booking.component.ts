@@ -63,7 +63,6 @@ export class BookingComponent {
   }
 
   loadUpozila(){
-    console.log(this.selectDistricts)
     this.move_from = '';
     this.move_to = '';
     this.location.findArea(this.selectDistricts).subscribe({

@@ -1,0 +1,104 @@
+<div class="container housingcard mt-5">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-4">
+  
+      <div class="main-property-card">
+        <div class="card">
+          <figure>
+            <div>
+              <span class="onsale">
+                <!-- <span *ngFor="let tag of unit.tags" class="saled rounded">For {{tag.name}}</span> -->
+                <span  class="eye-icon">
+                  <i class="bi bi-eye"></i>
+                  <span class="ms-1">unit.views Views</span>
+                </span>
+              </span>
+            </div>
+            <a class="product-image">
+              <img src="https://res.cloudinary.com/bdassistant/image/upload/w_500,h_400,c_fill/" class="card-img-top" [alt]="">
+            </a>
+          </figure>
+          <div class="card-body">
+            <div class="d-flex justify-content-between property-title">
+              <div class="units">
+                <p class="card-title  rounded mt-1" style="width: auto;">
+                  <span >tag.name <span> 1"> / </span> </span>
+                </p>
+              </div>
+              <div>
+                <p class="fw-bold rent-text"> unit.rent ৳ </p>
+              </div>
+              <div>
+                <a class="text-decoration-none viewBtnColor viewdetailsli-link">View <span class="detail-text"></span></a>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-12">
+                <div>
+                  <p class="location-text" style="margin: 0px; padding: 0px;"> unit.location </p>
+                  <p class="location-text" style="margin: 0px; padding: 0px;"> unit.areaName unit.upazilaName,  unit.districtName </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="d-flex mt-2">
+              <div class="property-card">
+                <div class="d-flex">
+                  <div class="icon">
+                    <img src="./assets/svg/bedroom.svg" alt="">
+                  </div>
+                  <div class="property-item ms-1">
+                    <h6> unit.bedrooms </h6>
+                    <p>Bedroom</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="property-card">
+                <div class="d-flex ms-1">
+                  <div class="icon">
+                    <img class="big-icon" src="./assets/svg/Floor.svg" alt="">
+                  </div>
+                  <div class="property-item ms-1">
+                    <h6>
+                      <span>Ground Floor</span>
+                      <span>unit.floorLevel</span> 
+                    </h6>
+                    <p>Floor Level</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex mt-1">
+              <div class="property-card">
+                <div class="d-flex">
+                  <div class="icon">
+                    <img src="./assets/svg/Common Bath.svg" alt="">
+                  </div>
+                  <div class="property-item ms-1">
+                    <h6> unit.commonBathroom + unit.attachedBathroom </h6>
+                    <p>Bathroom</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="property-card">
+                <div class="d-flex ms-1">
+                  <div class="icon">
+                    <img class="big-icon" src="./assets/svg/spacesize.svg" alt="">
+                  </div>
+                  <div class="property-item ms-1 spaceSize">
+                    <h6> unit.unitSize Sqft</h6>
+                    <p>Space Size</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+</div>
+

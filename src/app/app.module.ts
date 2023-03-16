@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { RentalsModule } from './modules/rentals/rentals.module';
+import { PropertyModule } from './modules/property/property.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { RentalsModule } from './modules/rentals/rentals.module';
     HomeModule,
     RentacarModule,
     RentalsModule,
+    PropertyModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatSnackBarModule
